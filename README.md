@@ -1,4 +1,4 @@
-# Frontend Mentor - Multi-step form
+# Desafio proposto por Frontend Mentor 
 
 ![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)
 
