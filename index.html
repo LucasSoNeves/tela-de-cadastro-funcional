@@ -51,7 +51,7 @@
       <!-- Step 1 start -->
     <form action="cadastro.php" method="post">
       <p id="titulo">Informações Pessoais</p>
-      <p id="subtitulo">Por favor informe seu nome, email e telefone</p>
+      <p id="subtitulo">Por favor informe seu nome, email e telefone.</p>
       
       <label for="nome" class="dados" style="font-size: 22px;">Nome</label>  
       <input type="text" class="dados" name="nome"  id="nome" placeholder="   Ex. José Silva" autocomplete="name" required>
@@ -107,7 +107,7 @@
           </main>
 
           <p id="tituloPasso2">Selecione seu plano</p>
-          <p id="subtituloPasso2">Você pode escolher entre mensalidade e anualidade</p>
+          <p id="subtituloPasso2">Você pode escolher entre mensalidade e anualidade.</p>
 
           <button class="planos" onclick="plano1()">
             <img src="assets/images/icon-arcade.svg" alt="basico">
@@ -135,14 +135,61 @@
           <button type="submit" id="continuar" onclick="prosseguir()">Próximo</button>
       </section>
       <!--Step 2 end --> 
+    
+      <!-- Step 3 start -->
+    <section id="principalPasso3">
+      <main class="menu-lateral3">
+        <div class="sumario">
+          <div class="numero-do-passo">
+            <p id="check1">1</p>
+          </div>
+          <p class="passo">Passo 1</p>
+          <p class="tema">Suas informações</p>
+        </div>
+        
+        <div class="sumario">
+          <div class="numero-do-passo">
+              <p id="check2">2</p>
+          </div>
+          <p class="passo">Passo 2</p>
+          <p class="tema">Seleção de plano</p>
+        </div>
+        
+        <div class="sumario">
+          <div class="numero-do-passo">
+            <div id="fundo3">
+              <p id="check3">3</p>
+            </div>
+          </div>
+          <p class="passo">Passo 3</p>
+          <p class="tema">Add-ons</p>
+        </div>
+        
+        <div class="sumario">
+          <div class="numero-do-passo">
+            <p id="check4">4</p>
+          </div>
+          <p class="passo">Passo 4</p>
+          <p class="tema">Sumário</p>
+        </div>
+        </main>
+      
+      
+      <p id="tituloPasso3">Escolhas Adicionais</p>
+      <p id="subtituloPasso3">Esses serviços ajudarão você a ter uma melhor experiência.</p>
 
-      <!-- Step 3 start
-
-      Pick add-ons
-      Add-ons help enhance your gaming experience.
-
-      Online service
-      Access to multiplayer games
+      <label for="veri1">
+        <div class="opicionais1" name="opicionais1" id="opicionais1">
+          <input type="checkbox" name="veri1" id="veri1">
+          <span class="checkmark"></span>
+          <p id="serv1">Serviço online</p>
+          <p id="descricaoServ1">Tenha acesso a jogos multiplayer</p> 
+          <p id="preco1">+R$ 5,00/Mês</p>
+      </div>
+      </label>
+      
+    </section>
+      <!-- 
       +$1/mo
 
       Larger storage

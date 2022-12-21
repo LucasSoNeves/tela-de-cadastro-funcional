@@ -67,7 +67,7 @@ body {
     width: 30px;
 }
 
-#fundo1, #fundo2 {
+#fundo1, #fundo2, #fundo3 {
     background-color: lightgreen;
     border-radius: 360px;
     margin-left: auto;
@@ -176,7 +176,7 @@ input{
     font-weight: bold;
 }
 
-#principalPasso2 {
+#principalPasso2, #principalPasso3 {
     width: 65vw;
     height: 75vh;
     background-color: white;
@@ -184,14 +184,14 @@ input{
     margin-top: 4%;
 }
 
-#tituloPasso2 {
+#tituloPasso2, #tituloPasso3 {
     margin-left: 30%;
     margin-top: -50%;
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 190%;
 }
 
-#subtituloPasso2 {
+#subtituloPasso2, #subtituloPasso3 {
     margin-left: 30%;
     font-family: Ubuntu-Bold, sans-serif;
     margin-top: 1.5%;
@@ -199,7 +199,7 @@ input{
     margin-bottom: 3%;
 }
 
-.menu-lateral2 {
+.menu-lateral2, .menu-lateral3 {
     margin: 40px;
     background-image: url("../assets/images/bg-sidebar-desktop.svg");
     height: 75vh;
@@ -222,6 +222,7 @@ input{
     background-color: white;
     border-radius: 10px;
     font-size: 22px;
+    font-family: Ubuntu-Normal, sans-serif;
 }
 
 .planos:not(:first-of-type) {
@@ -251,4 +252,66 @@ input{
     margin-top: 2.5%;
     margin-left: -120px;
     font-size: 23px;
+}
+
+.opicionais1 {
+    border: 1px solid lightgray;
+    margin-left: 30%;
+    width: 50%;
+    height: 13%;
+    display: flex;
+    font-family: Ubuntu-Normal, sans-serif;
+    border-radius: 10px;
+}
+
+#veri1 {
+    width: 30px;
+    height: 30px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.checkmark {
+    margin: 5%;
+    margin-left: -4.5%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(0, 255, 0);
+}
+
+.opicionais1 input:checked ~ .checkmark{
+    background-color: blue;
+}
+
+.opicionais1 .checkmark::after {
+    content: "";
+    display: none;
+    margin: 5%;
+    margin-left: 25%;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.opicionais1 input:checked ~ .checkmark::after {
+    display: block;
+}
+
+#serv1 {
+    font-size: 25px;
+    margin: 4% 4%;
+}
+
+#descricaoServ1 {
+    margin: 9% -27.5%;
+    font-size: 18px;
+}
+
+#preco1 {
+    margin-left: 50%;
+    margin-top: 6%;
 }
