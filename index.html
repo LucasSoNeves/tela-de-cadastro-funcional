@@ -10,11 +10,13 @@
 </head>
 <body>
   <div id="principal">
-    <main id="menu-lateral">
+    <main class="menu-lateral">
       <!--slidebar start-->
       <div class="sumario">
         <div class="numero-do-passo">
-          <p id="check1">1</p>
+          <div id="fundo1">
+             <p id="check1">1</p>
+          </div>
         </div>
         <p class="passo">Passo 1</p>
         <p class="tema">Suas informações</p>
@@ -45,7 +47,7 @@
       </div>
       <!-- Sidebar end -->
     </main>
-
+    <br>
       <!-- Step 1 start -->
     <form action="cadastro.php" method="post">
       <p id="titulo">Informações Pessoais</p>
@@ -60,32 +62,79 @@
       <label for="telefone" class="dados" style="font-size: 22px;">Telefone (opcional)</label>
       <input type="tel" class="dados" name="telefone"  id="telefone" autocomplete=" tel" placeholder="   (99) 998765432">
       <br>
-      <button type="submit" id="botao" onclick="validacao()">Próximo</button>
+      <button type="submit" id="botao" onclick="prosseguir()">Próximo</button>
     </form>
       <!-- Step 1 end -->
 
       <!-- Step 2 start -->
+      <section id="principalPasso2">
+          <main class="menu-lateral2">
+            <!--slidebar start-->
+            <div class="sumario">
+              <div class="numero-do-passo">
+                <p id="check1">1</p>
+              </div>
+              <p class="passo">Passo 1</p>
+              <p class="tema">Suas informações</p>
+            </div>
+            
+            <div class="sumario">
+              <div class="numero-do-passo">
+                <div id="fundo2">
+                  <p id="check2">2</p>
+                </div>
+              </div>
+              <p class="passo">Passo 2</p>
+              <p class="tema">Seleção de plano</p>
+            </div>
+            
+            <div class="sumario">
+              <div class="numero-do-passo">
+                <p id="check3">3</p>
+              </div>
+              <p class="passo">Passo 3</p>
+              <p class="tema">Add-ons</p>
+            </div>
+            
+            <div class="sumario">
+              <div class="numero-do-passo">
+                <p id="check4">4</p>
+              </div>
+              <p class="passo">Passo 4</p>
+              <p class="tema">Sumário</p>
+            </div>
+            <!-- Sidebar end -->
+          </main>
 
-<!--
-  Select your plan
-      You have the option of monthly or yearly billing.
+          <p id="tituloPasso2">Selecione seu plano</p>
+          <p id="subtituloPasso2">Você pode escolher entre mensalidade e anualidade</p>
 
-      Arcade
-      $9/mo
+          <button class="planos" onclick="plano1()">
+            <img src="assets/images/icon-arcade.svg" alt="basico">
+            <p>Básico</p>
+            <p>R$ 9,00/Mês</p>
+          </buttom>
 
-      Advanced
-      $12/mo
+          <button class="planos" onclick="plano2()">
+            <img src="assets/images/icon-advanced.svg" alt="Intermediário">
+            <p>Intermediário</p>
+            <p>R$ 15,00/Mês</p>
+          </button>
 
-      Pro
-      $15/mo
+          <button class="planos" onclick="plano3()">
+            <img src="assets/images/icon-pro.svg" alt="avançado">
+            <p>Avançado</p>
+            <p>R$ 20,00/Mês</p>
+          </button><br>
 
-      Monthly
-      Yearly
-
-      Go Back
-      Next Step
-
-       Step 2 end 
+          <div id="periodo">
+            <p id="mes">Mensal</p><input type="range" name="periodo" id="periodo" min="1" max="2"><p id="ano">Anual</p>
+          </div>
+          
+          <button type="submit" id="voltar" onclick="voltar()">Voltar</button>
+          <button type="submit" id="continuar" onclick="prosseguir()">Próximo</button>
+      </section>
+      <!--Step 2 end --> 
 
       <!-- Step 3 start
 
@@ -135,9 +184,9 @@
     
       
   </div>
-  <footer>
+  <!--<footer>
     Desenvolvido por <a href="https://www.linkedin.com/in/lucas-de-sousa-neves/" target="_blank">Lucas Neves</a>.
-  </footer>
+  </footer>!-->
 
   <script src="js/main.js"></script>
 </body>
