@@ -2,9 +2,9 @@
     font-family: Ubuntu-Bold;
     font-family: Ubuntu-Medium;
     font-family: Ubuntu-Regular;
-    src: url(../assets/fonts/Ubuntu-Bold.ttf), 
-         url(../assets/fonts/Ubuntu-Medium.ttf), 
-         url(../assets/fonts/Ubuntu-Regular.ttf);
+    src: url(https://fonts.google.com/specimen/Ubuntu), 
+         url(https://fonts.google.com/specimen/Ubuntu), 
+         url(https://fonts.google.com/specimen/Ubuntu);
 }
 
 *{
@@ -67,7 +67,7 @@ body {
     width: 30px;
 }
 
-#fundo1, #fundo2, #fundo3 {
+#fundo1, #fundo2, #fundo3, #fundo4 {
     background-color: lightgreen;
     border-radius: 360px;
     margin-left: auto;
@@ -176,7 +176,7 @@ input{
     font-weight: bold;
 }
 
-#principalPasso2, #principalPasso3 {
+#principalPasso2, #principalPasso3, #principalPasso4 {
     width: 65vw;
     height: 75vh;
     background-color: white;
@@ -184,14 +184,14 @@ input{
     margin-top: 4%;
 }
 
-#tituloPasso2, #tituloPasso3 {
+#tituloPasso2, #tituloPasso3, #tituloPasso4 {
     margin-left: 30%;
     margin-top: -50%;
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 190%;
 }
 
-#subtituloPasso2, #subtituloPasso3 {
+#subtituloPasso2, #subtituloPasso3, #subtituloPasso4 {
     margin-left: 30%;
     font-family: Ubuntu-Bold, sans-serif;
     margin-top: 1.5%;
@@ -199,7 +199,7 @@ input{
     margin-bottom: 3%;
 }
 
-.menu-lateral2, .menu-lateral3 {
+.menu-lateral2, .menu-lateral3, .menu-lateral4 {
     margin: 40px;
     background-image: url("../assets/images/bg-sidebar-desktop.svg");
     height: 75vh;
@@ -386,7 +386,7 @@ input{
 
 #voltar1 {
     margin-left: 30%;
-    margin-top: 5.5%;
+    margin-top: 4%;
     width: 12%;
     height: 60px;
     border: 0px;
@@ -399,6 +399,41 @@ input{
 }
 
 #continuar1 {
+    margin-left: 35%;
+    width: 12%;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(58, 58, 218);
+    color: white;
+    font-family: Ubuntu-Normal, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#resumo {
+    width: 40%;
+    height: 300px;
+    background-color: rgba(236, 236, 236, 0.795);
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
+#voltar2 {
+    margin-left: 30%;
+    margin-top: 11%;
+    width: 12%;
+    height: 60px;
+    border: 0px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(70, 140, 184);
+    font-family: Ubuntu-Normal, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#confirmar {
     margin-left: 35%;
     width: 12%;
     height: 60px;
