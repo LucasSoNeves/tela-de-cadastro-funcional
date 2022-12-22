@@ -254,7 +254,7 @@ input{
     font-size: 23px;
 }
 
-.opicionais1 {
+.opicionais1, .opicionais2, .opicionais3 {
     border: 1px solid lightgray;
     margin-left: 30%;
     width: 50%;
@@ -264,14 +264,14 @@ input{
     border-radius: 10px;
 }
 
-#veri1 {
+#veri1, #veri2, #veri3 {
     width: 30px;
     height: 30px;
     margin-left: 5%;
     margin-top: 5%;
 }
 
-.checkmark {
+.checkmark, .checkmark2, .checkmark3 {
     margin: 5%;
     margin-left: -4.5%;
     height: 30px;
@@ -301,17 +301,112 @@ input{
     display: block;
 }
 
+.opicionais2 input:checked ~ .checkmark2 {
+    background-color: blue;
+}
+
+.opicionais2 .checkmark2::after {
+    content: "";
+    display: none;
+    margin: 5%;
+    margin-left: 25%;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.opicionais2 input:checked ~ .checkmark2::after {
+    display: block;
+}
+
+.opicionais3 input:checked ~ .checkmark3 {
+    background-color: blue;
+}
+
+.opicionais3 .checkmark3::after {
+    content: "";
+    display: none;
+    margin: 5%;
+    margin-left: 25%;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.opicionais3 input:checked ~ .checkmark3::after {
+    display: block;
+}
+
+
 #serv1 {
     font-size: 25px;
-    margin: 4% 4%;
+    margin: 4% 1%;
+}
+
+#serv2, #serv3 {
+    font-size: 25px;
+    margin: 4% 1%;
+    width: 50%;
 }
 
 #descricaoServ1 {
-    margin: 9% -27.5%;
+    margin: 9% -24.5%;
     font-size: 18px;
 }
 
+#descricaoServ2, #descricaoServ3 {
+    font-size: 18px;
+    margin-top: 9%;
+    margin-left: -51%;
+
+}
+
 #preco1 {
-    margin-left: 50%;
+    margin-left: 47%;
     margin-top: 6%;
+}
+
+#preco2 {
+    margin-left: 22%;
+    margin-top: 6%;
+}
+
+#preco3 {
+    margin-left: 24%;
+    margin-top: 6%;
+}
+
+#voltar1 {
+    margin-left: 30%;
+    margin-top: 5.5%;
+    width: 12%;
+    height: 60px;
+    border: 0px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(70, 140, 184);
+    font-family: Ubuntu-Normal, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#continuar1 {
+    margin-left: 35%;
+    width: 12%;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(58, 58, 218);
+    color: white;
+    font-family: Ubuntu-Normal, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
 }
