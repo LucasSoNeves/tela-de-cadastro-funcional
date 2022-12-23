@@ -10,7 +10,8 @@
 </head>
 <body>
   <div id="principal">
-    <main class="menu-lateral">
+    <div class="secoes">
+    <section class="menu-lateral">
       <!--slidebar start-->
       <div class="sumario">
         <div class="numero-do-passo">
@@ -46,10 +47,10 @@
         <p class="tema">Sumário</p>
       </div>
       <!-- Sidebar end -->
-    </main>
+    </section>
     <br>
       <!-- Passo 1 começo -->
-    <form action="cadastro.php" method="post">
+    <form>
       <p id="titulo">Informações Pessoais</p>
       <p id="subtitulo">Por favor informe seu nome, email e telefone.</p>
       
@@ -64,9 +65,11 @@
       <br>
       <button type="submit" id="botao" onclick="prosseguir()">Próximo</button>
     </form>
+    </div>
       <!-- passo 1 fim -->
 
       <!-- passo 2 começo -->
+  <div class="secoes">
       <section id="principalPasso2">
           <main class="menu-lateral2">
             <!--slidebar start-->
@@ -134,9 +137,11 @@
           <button type="submit" id="voltar" onclick="voltar()">Voltar</button>
           <button type="submit" id="continuar" onclick="prosseguir()">Próximo</button>
       </section>
+  </div>
       <!--passo 2 fim --> 
     
       <!-- passo 3 começo -->
+  <div class="secoes">
     <section id="principalPasso3">
       <main class="menu-lateral3">
         <div class="sumario">
@@ -211,10 +216,12 @@
       <button type="submit" id="voltar1" onclick="voltar()">Voltar</button>
       <button type="submit" id="continuar1" onclick="prosseguir()">Próximo</button>
     </section>
+  </div>
       <!-- passo 3 fim -->
 
 
       <!-- Step 4 start -->
+  <div class="secoes">
     <section id="principalPasso4">
       <main class="menu-lateral4">
         <div class="sumario">
@@ -251,27 +258,25 @@
           <p class="tema">Sumário</p>
         </div>
         </main>
+
+        <p id="tituloPasso4">Recapitulação de escolhas</p>
+        <p id="subtituloPasso4">Se tudo estiver correto clique em confirmar.</p>
+
+        <section id="resumo">
+
+        </section>
+        <button type="submit" id="voltar2" onclick="voltar()">Voltar</button>
+        <button type="submit" id="confirmar" onclick="confirmar()">Confirmar</button>
       </section>
       
-      <p id="tituloPasso4">Recapitulação de escolhas</p>
-      <p id="subtituloPasso4">Se tudo estiver correto clique em confirmar.</p>
 
-      <section id="resumo">
-
-      </section>
-      <button type="submit" id="voltar2" onclick="voltar()">Voltar</button>
-      <button type="submit" id="confirmar" onclick="confirmar()">Confirmar</button>
-      <!-- Dynamically add subscription and add-on selections here 
-
-      Total (per month/year)
-
-      Go Back
-      Confirm
+  </div>
+  </div>
 
       <!-- Step 4 end -->
-
+ 
       <!-- Step 5 start 
-
+Total (per month/year)
       Thank you!
 
       Thanks for confirming your subscription! We hope you have fun 
@@ -279,9 +284,6 @@
       to email us at support@loremgaming.com.
 
       <!-- Step 5 end -->
-    
-      
-  </div>
   <!--<footer>
     Desenvolvido por <a href="https://www.linkedin.com/in/lucas-de-sousa-neves/" target="_blank">Lucas Neves</a>.
   </footer>!-->
