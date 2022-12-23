@@ -217,6 +217,7 @@ input{
     height: 200px;
     margin-left: 38%;
     margin-right: 0.3%;
+    margin-bottom: 3%;
     text-align: center;
     cursor: pointer;
     background-color: white;
@@ -242,15 +243,48 @@ input{
 
 #mes, #ano {
     margin-left: -25%;
-    margin-top: 5%;
     font-size: 23px;
+    margin-right: -3%;
+}
+
+#mes {
+    margin-right: 4px;
+}
+
+.estilo {
+    -webkit-appearance: none;
+    background: #8d6aee;
+    outline: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 9px;
+}
+
+.estilo::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+
+    background: #2796ee;
+    cursor: pointer;
+}
+
+.estilo::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+
+    background: #2796ee;
+    cursor: pointer;
 }
 
 #periodo input{
-    width: 30px;
+    width: 40px;
     border: 0px;
     margin-top: 2.5%;
-    margin-left: -120px;
+    margin-left: -115px;
     font-size: 23px;
 }
 
