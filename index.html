@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="principal">
-    <div class="secoes">
+    <div class="secoes" id="secao1">
     <section class="menu-lateral">
       <!--slidebar start-->
       <div class="sumario">
@@ -50,7 +50,7 @@
     </section>
     <br>
       <!-- Passo 1 começo -->
-    <form>
+    <form id="form1">
       <p id="titulo">Informações Pessoais</p>
       <p id="subtitulo">Por favor informe seu nome, email e telefone.</p>
       
@@ -63,13 +63,16 @@
       <label for="telefone" class="dados" style="font-size: 22px;">Telefone (opcional)</label>
       <input type="tel" class="dados" name="telefone"  id="telefone" autocomplete=" tel" placeholder="   (99) 998765432">
       <br>
-      <button type="submit" id="botao" onclick="prosseguir()">Próximo</button>
+      <div class="botao">
+        <button type="button"  id="botao" onclick="prosseguir()">Próximo</button>
+      </div>
     </form>
+    
     </div>
       <!-- passo 1 fim -->
 
       <!-- passo 2 começo -->
-  <div class="secoes">
+  <div class="secoes" id="secao2">
       <section id="principalPasso2">
           <main class="menu-lateral2">
             <!--slidebar start-->
@@ -141,7 +144,7 @@
       <!--passo 2 fim --> 
     
       <!-- passo 3 começo -->
-  <div class="secoes">
+  <div class="secoes" id="secao3">
     <section id="principalPasso3">
       <main class="menu-lateral3">
         <div class="sumario">
@@ -221,7 +224,7 @@
 
 
       <!-- Step 4 start -->
-  <div class="secoes">
+  <div class="secoes" id="secao4">
     <section id="principalPasso4">
       <main class="menu-lateral4">
         <div class="sumario">
@@ -268,8 +271,6 @@
         <button type="submit" id="voltar2" onclick="voltar()">Voltar</button>
         <button type="submit" id="confirmar" onclick="confirmar()">Confirmar</button>
       </section>
-      
-
   </div>
   </div>
 
