@@ -8,7 +8,7 @@ body {
 }
 
 .secoes:not(:first-of-type) {
-    display:none;
+   display:none;
 }
 
 #principal {
@@ -171,12 +171,45 @@ input{
     font-weight: bold;
 }
 
-#principalPasso2, #principalPasso3, #principalPasso4 {
+#principalPasso2, #principalPasso3, #principalPasso4, #principalPasso5 {
     width: 65vw;
     height: 75vh;
     background-color: white;
     border-radius: 20px;
     margin-top: 4%;
+}
+
+#principalPasso5 {
+    margin-top: 161%;
+    margin-left: 17.3%;
+}
+
+#imgAgradecimento {
+    margin-left: 55%;
+    margin-top: -45%;
+}
+
+#tituloPasso5 {
+    margin-left: 55.4%;
+    margin-top: 3%;
+    font-family: sans-serif;
+    font-size: 190%;
+}
+
+#subtituloPasso5 {
+    margin-left: 40%;
+    width: 600px;
+    font-family: sans-serif;
+    margin-top: 2%;
+    font-size: 20px;
+    margin-bottom: 3%;
+    text-indent: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#subtituloPasso5 a {
+    text-decoration: none;
 }
 
 #tituloPasso2, #tituloPasso3, #tituloPasso4 {
@@ -194,7 +227,7 @@ input{
     margin-bottom: 3%;
 }
 
-.menu-lateral2, .menu-lateral3, .menu-lateral4 {
+.menu-lateral2, .menu-lateral3, .menu-lateral4, .menu-lateral5 {
     margin: 40px;
     background-image: url("../assets/images/bg-sidebar-desktop.svg");
     height: 75vh;
@@ -451,7 +484,7 @@ input{
 
 #voltar2 {
     margin-left: 30%;
-    margin-top: 11%;
+    margin-top: 8%;
     width: 12%;
     height: 60px;
     border: 0px;

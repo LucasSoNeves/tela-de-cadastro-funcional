@@ -2,6 +2,8 @@ var Secao1 = document.getElementById("secao1");
 var Secao2 = document.getElementById("secao2");
 var Secao3 = document.getElementById("secao3");
 var Secao4 = document.getElementById("secao4");
+var Secao5 = document.getElementById("secao5");
+var Principal = document.getElementById("principal");
 
 var Prosseguir = document.getElementById("botao");
 var Voltar = document.getElementById("voltar");
@@ -43,4 +45,8 @@ Voltar2.onclick = function() {
 
 Confirmar.onclick = function() {
     Secao4.style.display = "none";
+    Secao5.style.display = "block";
+    Principal.style.display = 'none';
+    Secao5.style.marginTop = '-154%';
+    Secao5.style.marginLeft = '0.5%';
 }
