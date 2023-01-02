@@ -14,8 +14,31 @@ var Voltar2 = document.getElementById("voltar2");
 var Confirmar = document.getElementById("confirmar");
 
 Prosseguir.onclick = function() {
-    Secao1.style.display = "none";
-    Secao2.style.display = "block";
+    var dadoNome = document.getElementById("nome").value;
+    var dadoEmail = document.getElementById("email").value;
+    var padrao = /[^a-zà-ú- ]/gi;
+    var padraoEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    var texto = dadoNome.match(padrao);
+    var textoEmail = dadoEmail.match(padraoEmail);
+
+    if ( texto  || !dadoNome ) {
+        window.alert('O nome deve possuir apenas letras!');
+        Secao1.style.display = 'block';
+        Secao2.style.display = 'none';
+    } else {
+            Secao1.style.display = "none";
+            Secao2.style.display = "block";
+    }
+
+    if ( textoEmail || !dadoEmail ) {
+        window.alert('Insira o email corretamente!');
+        Secao1.style.display = 'block';
+        Secao2.style.display = 'none';
+    } else {
+        Secao1.style.display = "none";
+        Secao2.style.display = "block";
+    }
+    
 }
 
 Voltar.onclick = function() {

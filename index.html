@@ -56,7 +56,7 @@
       <p id="subtitulo">Por favor informe seu nome, email e telefone.</p>
       
       <label for="nome" class="dados" style="font-size: 22px;">Nome</label>  
-      <input type="text" class="dados" name="nome"  id="nome" placeholder="   Ex. José Silva" autocomplete="name" required>
+      <input type="text" class="dados" name="nome"  id="nome" placeholder="   Ex. José Silva (min 3 caract.)" autocomplete="name" required>
 
       <label for="email" class="dados" style="font-size: 22px;">Email</label>
       <input type="email" class="dados" name="email"  id="email" placeholder="   aaaa@gmail.com" autocomplete="email" required>
@@ -65,7 +65,7 @@
       <input type="tel" class="dados" name="telefone"  id="telefone" autocomplete=" tel" placeholder="   (99) 998765432">
       <br>
       <div class="botao">
-        <button type="button"  id="botao" onclick="prosseguir()">Próximo</button>
+        <button type="button"  id="botao">Próximo</button>
       </div>
     </form>
     </div>
@@ -137,8 +137,8 @@
             <p id="mes">Mensal</p><input type="range" name="periodo" class="estilo" id="periodo" min="1" max="2"><p id="ano">Anual</p>
           </div>
           
-          <button type="submit" id="voltar" onclick="voltar()">Voltar</button>
-          <button type="submit" id="continuar" onclick="prosseguir()">Próximo</button>
+          <button type="submit" id="voltar">Voltar</button>
+          <button type="submit" id="continuar">Próximo</button>
       </section>
   </div>
       <!--passo 2 fim --> 
@@ -216,8 +216,8 @@
       </div>
       </label>
 
-      <button type="submit" id="voltar1" onclick="voltar()">Voltar</button>
-      <button type="submit" id="continuar1" onclick="prosseguir()">Próximo</button>
+      <button type="submit" id="voltar1">Voltar</button>
+      <button type="submit" id="continuar1">Próximo</button>
     </section>
   </div>
       <!-- passo 3 fim -->
@@ -267,8 +267,8 @@
         <section id="resumo">
 
         </section>
-        <button type="submit" id="voltar2" onclick="voltar()">Voltar</button>
-        <button type="submit" id="confirmar" onclick="confirmar()">Confirmar</button>
+        <button type="submit" id="voltar2">Voltar</button>
+        <button type="submit" id="confirmar">Confirmar</button>
       </section>
   </div>
   </div>
