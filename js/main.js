@@ -15,11 +15,8 @@ var Confirmar = document.getElementById("confirmar");
 
 Prosseguir.onclick = function() {
     var dadoNome = document.getElementById("nome").value;
-    var dadoEmail = document.getElementById("email").value;
     var padrao = /[^a-zà-ú- ]/gi;
-    var padraoEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     var texto = dadoNome.match(padrao);
-    var textoEmail = dadoEmail.match(padraoEmail);
 
     if ( texto  || !dadoNome ) {
         window.alert('O nome deve possuir apenas letras!');
@@ -30,15 +27,18 @@ Prosseguir.onclick = function() {
             Secao2.style.display = "block";
     }
 
-    if ( textoEmail || !dadoEmail ) {
-        window.alert('Insira o email corretamente!');
+    var dadoEmail = document.getElementById("email").value;
+    var padraoEmail = /^(?=[a-z])(?=[A-Z])(?=[0-9])(?![!@#$%&_-])$/;
+    var textoEmail = dadoEmail.match(padraoEmail);
+
+    if ( textoEmail  || !dadoEmail ) {
+        window.alert('Email inválido!');
         Secao1.style.display = 'block';
         Secao2.style.display = 'none';
     } else {
-        Secao1.style.display = "none";
-        Secao2.style.display = "block";
+            Secao1.style.display = "none";
+            Secao2.style.display = "block";
     }
-    
 }
 
 Voltar.onclick = function() {
@@ -72,4 +72,64 @@ Confirmar.onclick = function() {
     Principal.style.display = 'none';
     Secao5.style.marginTop = '-154%';
     Secao5.style.marginLeft = '0.5%';
+}
+
+var borda1 = document.getElementById("bordaPlano1");
+borda1.style.border = '1px solid lightgray';
+
+function plano1() {
+    borda1.addEventListener('click', function() {
+        if ( borda1.style.border = '1px solid lightgray' || borda2.style.border == '1px solid blue' || borda1.style.border == '1px solid blue' ) {
+            borda1.style.border = '1px solid blue';
+            borda2.style.border = '1px solid lightgray';
+            borda3.style.border = '1px solid lightgray';
+        }
+
+        borda1.addEventListener('click',  function() {
+            if ( borda1.style.border = '1px solid blue' ) {
+                borda1.style.border = '1px solid lightgray';
+            }
+            plano1();
+        })
+    })
+}
+
+var borda2 = document.getElementById("bordaPlano2");
+borda2.style.border = '1px solid lightgray';
+
+function plano2() {
+    borda2.addEventListener('click', function() {
+        if ( borda2.style.border = '1px solid lightgray' || borda1.style.border == '1px solid blue'|| borda3.style.border == '1px solid blue') {
+            borda2.style.border = '1px solid blue';
+            borda1.style.border = '1px solid lightgray';
+            borda3.style.border = '1px solid lightgray';
+        }
+
+        borda2.addEventListener('click',  function() {
+            if ( borda2.style.border = '1px solid blue' ) {
+                borda2.style.border = '1px solid lightgray';
+            }
+            plano2();
+        })
+    })
+}
+
+var borda3 = document.getElementById("bordaPlano3");
+borda3.style.border = '1px solid lightgray';
+
+function plano3() {
+    borda3.addEventListener('click', function() {
+        if ( borda3.style.border = '1px solid lightgray' || borda1.style.border == '1px solid blue' || borda2.style.border == '1px solid blue') {
+            borda3.style.border = '1px solid blue';
+            borda1.style.border = '1px solid lightgray';
+            borda2.style.border = '1px solid lightgray';
+        }
+
+        borda3.addEventListener('click',  function() {
+            if ( borda3.style.border = '1px solid blue' ) {
+                borda3.style.border = '1px solid lightgray';
+            }
+            plano3();
+        })
+    })
 }

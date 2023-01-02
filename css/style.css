@@ -264,6 +264,10 @@ input{
     margin: 35px;
 }
 
+#bordaPlano1:active {
+    border: 1px solid blue;
+}
+
 #periodo {
     display: flex;
     margin-left: 70.5%;
