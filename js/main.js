@@ -139,12 +139,16 @@ var precoAnual1 = document.getElementById("precoPlano1");
 var precoAnual2 = document.getElementById("precoPlano2");
 var precoAnual3 = document.getElementById("precoPlano3");
 
-function precosDosPlanos() {
-    if ( Periodo = 2 ) {
+function precosDosPlanosAnual() {
+    if ( Periodo = 2 || document.getElementById("periodo").checked ) {
         precoAnual1.innerHTML = 'R$ 80,00/Ano';
         precoAnual2.innerHTML = 'R$ 130,00/Ano';
         precoAnual3.innerHTML = 'R$ 190,00/Ano';
-    } else if ( Periodo = 1 ) {
+    }
+}
+
+function precosDosPlanosMensal() {
+    if ( Periodo = 1 || document.getElementById("periodo").checked ) {
         precoAnual1.innerHTML = 'R$ 9,00/Mês';
         precoAnual2.innerHTML = 'R$ 15,00/Mês';
         precoAnual3.innerHTML = 'R$ 20,00/Mês';
