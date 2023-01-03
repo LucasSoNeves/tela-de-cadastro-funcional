@@ -154,3 +154,25 @@ function precosDosPlanosMensal() {
         precoAnual3.innerHTML = 'R$ 20,00/Mês';
     }
 }
+
+
+var cont = 0;
+var checar1 = document.getElementById("veri1");
+var checar2 = document.getElementById("veri2");
+var checar3 = document.getElementById("veri3");
+
+if ( checar1.checked ) {
+    cont += 5,00;
+} else if ( checar2.checked ) {
+    cont += 15,00;
+} else if ( checar3.checked ) {
+    cont += 1,00;
+} else if ( checar1.checked && checar2.checked && checar3.checked) {
+    cont += 21,00;
+} else if ( checar1.checked && checar3.checked ) {
+    cont += 6,00;
+} else if ( checar1.checked && checar2.checked ) {
+    cont += 20,00;
+} else if ( checar2.checked && checar3.checked ) {
+    cont += 16,00;
+}
