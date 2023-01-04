@@ -175,4 +175,79 @@ if ( checar1.checked ) {
     cont += 20,00;
 } else if ( checar2.checked && checar3.checked ) {
     cont += 16,00;
+} else {
+    cont = 0,00;
+}
+
+var Resumo = document.getElementById("sumarioPrecoPlano");
+var sumarioPrecoServicos = document.getElementById("sumarioPrecoServicos");
+var sumarioPrecoServicos2 = document.getElementById("sumarioPrecoServicos2");
+var sumarioPrecoServicos3 = document.getElementById("sumarioPrecoServicos3");
+var sumarioPrecoTotal = document.getElementById("sumarioPrecoTotal");
+var precoPlano = document.getElementById("precoPlano");
+var precoServico = document.getElementById("precoServico");
+var precoServico2 = document.getElementById("precoServico2");
+var precoServico3 = document.getElementById("precoServico3");
+var precoTotal = document.getElementById("precoTotal");
+
+if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checked && checar2.checked && checar3.checked) {
+    Resumo.innerHTML = 'Básico (Mensal) : <hr>';
+    precoPlano.innerHTML = 'R$9/Mês <hr>';
+
+    sumarioPrecoServicos.innerHTML = 'Serviço online :';
+    precoServico.innerHTML = 'R$5/Mês <br>';
+
+    sumarioPrecoServicos2.innerHTML = 'Maior armazenamento :';
+    precoServico2.innerHTML = 'R$15/Mês <br>';
+
+    sumarioPrecoServicos3.innerHTML = 'Perfil personalizável :';
+    precoServico3.innerHTML = 'R$1/Mês <br>';
+
+    sumarioPrecoTotal.innerHTML = 'Total (Por mês)'+' :';
+    precoTotal.innerHTML = ''+'R$21/Mês';
+} else if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checked && checar2.checked ) {
+    Resumo.innerHTML = 'Básico (Mensal) : <hr>';
+    precoPlano.innerHTML = 'R$9/Mês <hr>';
+
+    sumarioPrecoServicos.innerHTML = 'Serviço online :';
+    precoServico.innerHTML = 'R$5/Mês <br>';
+
+    sumarioPrecoServicos2.innerHTML = 'Maior armazenamento :';
+    precoServico2.innerHTML = 'R$15/Mês <br>';
+
+    sumarioPrecoTotal.innerHTML = 'Total (Por mês)'+' :';
+    precoTotal.innerHTML = ''+'R$20/Mês';
+} else if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checked ) {
+    Resumo.innerHTML = 'Básico (Mensal) : <hr>';
+    precoPlano.innerHTML = 'R$9/Mês <hr>';
+
+    sumarioPrecoServicos.innerHTML = 'Serviço online :';
+    precoServico.innerHTML = 'R$5/Mês <br>';
+
+    sumarioPrecoTotal.innerHTML = 'Total (Por mês)'+' :';
+    precoTotal.innerHTML = ''+'R$14/Mês';
+} else if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checked && checar3.checked ) {
+    Resumo.innerHTML = 'Básico (Mensal) : <hr>';
+    precoPlano.innerHTML = 'R$9/Mês <hr>';
+
+    sumarioPrecoServicos.innerHTML = 'Serviço online :';
+    precoServico.innerHTML = 'R$5/Mês <br>';
+
+    sumarioPrecoServicos3.innerHTML = 'Perfil personalizável :';
+    precoServico3.innerHTML = 'R$1/Mês <br>';
+
+    sumarioPrecoTotal.innerHTML = 'Total (Por mês)'+' :';
+    precoTotal.innerHTML = ''+'R$15/Mês';
+} else if ( Periodo = 1 || document.getElementById("periodo").checked && checar2.checked && checar3.checked ) {
+    Resumo.innerHTML = 'Básico (Mensal) : <hr>';
+    precoPlano.innerHTML = 'R$9/Mês <hr>';
+
+    sumarioPrecoServicos2.innerHTML = 'Maior armazenamento :';
+    precoServico2.innerHTML = 'R$15/Mês <br>';
+
+    sumarioPrecoServicos3.innerHTML = 'Perfil personalizável :';
+    precoServico3.innerHTML = 'R$1/Mês <br>';
+
+    sumarioPrecoTotal.innerHTML = 'Total (Por mês)'+' :';
+    precoTotal.innerHTML = ''+'R$25/Mês';
 }
