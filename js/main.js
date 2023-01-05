@@ -155,42 +155,35 @@ function precosDosPlanosMensal() {
     }
 }
 
+let checar1 = document.querySelector("#veri1");
+let checar2 = document.querySelector("#veri2");
+let checar3 = document.querySelector("#veri3");
 
-var cont = 0;
-var checar1 = document.getElementById("veri1");
-var checar2 = document.getElementById("veri2");
-var checar3 = document.getElementById("veri3");
+var Resumo = document.querySelector("#sumarioPrecoPlano");
 
-if ( checar1.checked ) {
-    cont += 5,00;
-} else if ( checar2.checked ) {
-    cont += 15,00;
-} else if ( checar3.checked ) {
-    cont += 1,00;
-} else if ( checar1.checked && checar2.checked && checar3.checked) {
-    cont += 21,00;
-} else if ( checar1.checked && checar3.checked ) {
-    cont += 6,00;
-} else if ( checar1.checked && checar2.checked ) {
-    cont += 20,00;
-} else if ( checar2.checked && checar3.checked ) {
-    cont += 16,00;
-} else {
-    cont = 0,00;
-}
+var sumarioPrecoServicos = document.querySelector("#sumarioPrecoServicos");
+var sumarioPrecoServicos2 = document.querySelector("#sumarioPrecoServicos2");
+var sumarioPrecoServicos3 = document.querySelector("#sumarioPrecoServicos3");
+var sumarioPrecoServicos4 = document.querySelector("#sumarioPrecoServicos4");
+var sumarioPrecoServicos5 = document.querySelector("#sumarioPrecoServicos5");
+var sumarioPrecoServicos6 = document.querySelector("#sumarioPrecoServicos6");
 
-var Resumo = document.getElementById("sumarioPrecoPlano");
-var sumarioPrecoServicos = document.getElementById("sumarioPrecoServicos");
-var sumarioPrecoServicos2 = document.getElementById("sumarioPrecoServicos2");
-var sumarioPrecoServicos3 = document.getElementById("sumarioPrecoServicos3");
-var sumarioPrecoTotal = document.getElementById("sumarioPrecoTotal");
-var precoPlano = document.getElementById("precoPlano");
-var precoServico = document.getElementById("precoServico");
-var precoServico2 = document.getElementById("precoServico2");
-var precoServico3 = document.getElementById("precoServico3");
-var precoTotal = document.getElementById("precoTotal");
+var sumarioPrecoTotal = document.querySelector("#sumarioPrecoTotal");
+var sumarioPrecoTotal2 = document.querySelector("#sumarioPrecoTota2");
 
-if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checked && checar2.checked && checar3.checked) {
+var precoPlano = document.querySelector("#precoPlano");
+
+var precoServico = document.querySelector("#precoServico");
+var precoServico2 = document.querySelector("#precoServico2");
+var precoServico3 = document.querySelector("#precoServico3");
+var precoServico4 = document.querySelector("#precoServico4");
+var precoServico5 = document.querySelector("#precoServico5");
+var precoServico6 = document.querySelector("#precoServico6");
+
+var precoTotal = document.querySelector("#precoTotal");
+var precoTotal2 = document.querySelector("#precoTotal2");
+
+if ( Periodo = 1 || document.querySelector("#periodo").checked && checar1.checked && checar2.checked && checar3.checked ) {
     Resumo.innerHTML = 'Básico (Mensal) : <hr>';
     precoPlano.innerHTML = 'R$9/Mês <hr>';
 
@@ -204,8 +197,43 @@ if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checke
     precoServico3.innerHTML = 'R$1/Mês <br>';
 
     sumarioPrecoTotal.innerHTML = 'Total (Por mês)'+' :';
-    precoTotal.innerHTML = ''+'R$21/Mês';
-} else if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checked && checar2.checked ) {
+    precoTotal.innerHTML = ''+'R$30/Mês';
+
+    sumarioPrecoServicos4.style.display = 'none';
+    precoServico4.style.display = 'none';
+    sumarioPrecoServicos5.style.display = 'none';
+    precoServico5.style.display = 'none';
+    sumarioPrecoServicos6.style.display = 'none';
+    precoServico6.style.display = 'none';
+    sumarioPrecoTotal2.style.display = 'none';
+    precoTotal2.style.display = 'none';
+
+} else if ( Periodo = 2 || document.querySelector("#periodo").checked && checar1.checked && checar2.checked && checar3.checked ) {
+    Resumo.innerHTML = 'Básico (Anual) : <hr>';
+    precoPlano.innerHTML = 'R$80/Ano <hr>';
+
+    sumarioPrecoServicos.style.display = 'none';
+    precoServico.style.display = 'none';
+    sumarioPrecoServicos2.style.display = 'none';
+    precoServico2.style.display = 'none';
+    sumarioPrecoServicos3.style.display = 'none';
+    precoServico3.style.display = 'none';
+    sumarioPrecoTotal.style.display = 'none';
+    precoTotal.style.display = 'none';
+
+    sumarioPrecoServicos4.innerHTML = 'Serviço online :';
+    precoServico.innerHTML = 'R$5/Mês <br>';
+
+    sumarioPrecoServicos5.innerHTML = 'Maior armazenamento :';
+    precoServico2.innerHTML = 'R$15/Mês <br>';
+
+    sumarioPrecoServicos6.innerHTML = 'Perfil personalizável :';
+    precoServico3.innerHTML = 'R$1/Mês <br>';
+
+    sumarioPrecoTotal2.innerHTML = 'Total'+' :';
+    precoTotal.innerHTML = ''+'R$80/Ano + R$21/Mês';
+
+} else if ( Periodo = 1 || borda1.style.border == '1px solid blue' && checar1.checked && checar2.checked ) {
     Resumo.innerHTML = 'Básico (Mensal) : <hr>';
     precoPlano.innerHTML = 'R$9/Mês <hr>';
 
@@ -215,8 +243,11 @@ if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checke
     sumarioPrecoServicos2.innerHTML = 'Maior armazenamento :';
     precoServico2.innerHTML = 'R$15/Mês <br>';
 
+    sumarioPrecoServicos3.style.display = 'none';
+    precoServico3.style.display = 'none';
+
     sumarioPrecoTotal.innerHTML = 'Total (Por mês)'+' :';
-    precoTotal.innerHTML = ''+'R$20/Mês';
+    precoTotal.innerHTML = ''+'R$29/Mês';
 } else if ( Periodo = 1 || document.getElementById("periodo").checked && checar1.checked ) {
     Resumo.innerHTML = 'Básico (Mensal) : <hr>';
     precoPlano.innerHTML = 'R$9/Mês <hr>';

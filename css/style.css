@@ -8,7 +8,7 @@ body {
 }
 
 .secoes:not(:first-of-type) {
-   /*display:none;*/
+   display:none;
 }
 
 #principal {
@@ -466,16 +466,16 @@ input[type=radio] {
     font-size: 21px;
 }
 
-#sumarioPrecoServicos, #sumarioPrecoServicos2, #sumarioPrecoServicos3 {
+#sumarioPrecoServicos, #sumarioPrecoServicos2, #sumarioPrecoServicos3, #sumarioPrecoServicos4, #sumarioPrecoServicos5, #sumarioPrecoServicos6 {
     padding: 10px;
     padding-left: 20px;
 }
 
-#sumarioPrecoPlano {
+#sumarioPrecoPlano, #sumarioPrecoPlano2 {
     padding: 20px;
 }
 
-#sumarioPrecoTotal {
+#sumarioPrecoTotal, #sumarioPrecoTotal2 {
     padding-left: 20px;
     padding-top: 90px;
 }
@@ -485,12 +485,12 @@ input[type=radio] {
     margin-top: -67px;
 }
 
-#precoServico, #precoServico2, #precoServico3 {
+#precoServico, #precoServico2, #precoServico3, #precoServico4, #precoServico5, #precoServico6 {
     padding-left: 400px;
     margin-top: -35px;
 }
 
-#precoTotal {
+#precoTotal, #precoTotal2 {
     padding-left: 400px;
     margin-top: -25px;
 }
